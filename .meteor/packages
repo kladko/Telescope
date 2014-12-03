@@ -38,7 +38,6 @@ sacha:spin
 sacha:juice
 chuangbo:marked
 percolatestudio:synced-cron
-npm-container
 matb33:collection-hooks
 djedi:sanitize-html
 rajit:bootstrap3-datepicker
@@ -76,4 +75,5 @@ telescope-notifications
 useraccounts:unstyled
 telescope-datetimepicker
 tsega:bootstrap3-datetimepicker@3.1.3_1
+npm-container
 
