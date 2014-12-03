@@ -41,6 +41,16 @@ Schema.User = new SimpleSchema({
     type: Object,
     optional: true,
     blackbox: true
+  },
+  city: {
+    type: String,
+    optional: false
+  },
+
+  gender: {
+    type: String,
+    optional: false,
+    allowedValues: ["male", "female"]
   }
 });
 
