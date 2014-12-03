@@ -8,12 +8,9 @@
 standard-app-packages
 backbone
 accounts-base
-accounts-password
-accounts-twitter
 spiderable
 email
 accounts-facebook
-service-configuration
 accounts-ui
 
 # Atmosphere Packages
@@ -76,4 +73,5 @@ useraccounts:unstyled
 telescope-datetimepicker
 tsega:bootstrap3-datetimepicker@3.1.3_1
 npm-container
+service-configuration
 
