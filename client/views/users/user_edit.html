@@ -33,27 +33,29 @@
           <input name="email" type="text" value="{{userEmail}}" />
         </div>
       </div>
+
+
+     <div class="control-group">
+        <label>{{_ "gender"}}</label>
+        <div class="controls">
+          <select name="gender"  value="{{profile.gender}}">
+          <option>{{_ "male"}}</option>
+          <option>{{_ "female"}}</option>
+          </select>
+        </div>
+      </div>
+
+    <div class="control-group">
+        <label>{{_ "city"}}</label>
+        <div class="controls">
+          <input name="city" type="text" value="{{profile.city}}"/>
+        </div>
+      </div>
+
+
       <div class="control-group">
         <label>{{_ "bio"}}</label>
         <div class="controls"><textarea name="bio" type="text">{{profile.bio}}</textarea></div>
-      </div>
-      <div class="control-group">
-      <label>Twitter Username</label>
-        <div class="controls">
-          <input name="twitter" type="text" value="{{getTwitter}}" />
-        </div>
-      </div>
-      <div class="control-group">
-        <label>GitHub Username</label>
-        <div class="controls">
-          <input name="github" type="text" value="{{getGitHub}}" />
-        </div>
-      </div>
-      <div class="control-group">
-        <label>Site</label>
-        <div class="controls">
-          <input name="site" type="text" value="{{profile.site}}" />
-        </div>
       </div>
       {{#if hasPassword}}
         <h3>{{_ "change_password"}}</h3>

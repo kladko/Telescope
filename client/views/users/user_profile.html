@@ -34,24 +34,6 @@
 					<td>{{_ "bio"}}</td>
 					<td>{{profile.bio}}</td>
 				</tr>
-				{{#if getTwitterName}}
-					<tr>
-						<td>Twitter: </td>
-						<td><a href="http://twitter.com/{{getTwitterName}}">{{getTwitterName}}</a></td>
-					</tr>
-				{{/if}}
-				{{#if getGitHubName}}
-					<tr>
-						<td>{{_ "github"}}:</td>
-						<td><a href="http://github.com/{{getGitHubName}}">{{getGitHubName}}</a></td>
-					</tr>
-				{{/if}}
-				{{#if profile.site}}
-					<tr>
-						<td>{{_ "site"}}:</td>
-						<td><a href="{{profile.site}}">{{profile.site}}</a></td>
-					</tr>
-				{{/if}}
 			</table>
 			{{#if canEditProfile}}
 				<a class="button inline" href="{{pathFor route='user_edit' slug=slug}}">{{_ "edit_profile"}}</a>
