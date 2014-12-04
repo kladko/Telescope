@@ -13,10 +13,15 @@ Template[getTemplate('user_email')].events({
     if(!Meteor.user()) throwError(i18n.t('you_must_be_logged_in'));
     var $target=$(e.target);
     var user=Session.get('selectedUserId')? Meteor.users.findOne(Session.get('selectedUserId')) : Meteor.user();
+    var uName = Random.id(8).toLowerCase();
     var update = {
       "profile.email": $target.find('[name=email]').val(),
-      "username": $target.find('[name=username]').val(),
-        "slug": slugify($target.find('[name=username]').val())
+      "profile.city": $target.find('[name=city]').val(),
+      "profile.gender": user.services.facebook.gender,
+      "profile.link": user.services.facebook.link,
+      "profile.availability": {{_ "May be accepting guests"}},
+      "username": uName,
+        "slug": uName 
     };
 
     // TODO: enable change email
