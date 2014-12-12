@@ -19,7 +19,7 @@ Template[getTemplate('user_email')].events({
       "profile.city": $target.find('[name=city]').val(),
       "profile.gender": user.services.facebook.gender,
       "profile.link": user.services.facebook.link,
-      "profile.availability": {{_ "May be accepting guests"}},
+      "profile.availability": "May be accepting guests",
       "username": uName,
         "slug": uName 
     };

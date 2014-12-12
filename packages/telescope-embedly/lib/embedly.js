@@ -35,6 +35,7 @@ var embedlyKeyProperty = {
   propertyName: 'embedlyKey',
   propertySchema: {
     type: String,
+    defaultValue:'56a7bb803a3644c490eb0ec404f1d767',
     optional: true,
     autoform: {
       group: 'embedly'
